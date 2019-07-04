@@ -1,0 +1,30 @@
+<div class="contact">
+  <div class="main-parallax"></div>
+  <div class="container">
+    <h2>CONTACTO</h2>
+    <p>Dejanos tu consulta en el formulario y en breve nos comunicamos con vos</p>
+    <form>
+      <label for="name">Nombre</label>
+      <div class="input-group">
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="name" name="name"  type="text" class="form-control">
+      </div>
+      <label for="surname">Apellido</label>
+      <div class="input-group">
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="surname" name="surname" type="text" class="form-control">
+      </div>
+      <label for="email">Email </label>
+      <div class="input-group">
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="mail" name="mail" type="email" class="form-control">
+      </div>
+      <label for="phone">Celular</label>
+      <div class="input-group">
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="phone" name="phone" id="phone" type="text" class="form-control">
+      </div>
+      <label for="message">Mensaje</label>
+      <div class="input-group">
+        <textarea [ngModelOptions]="{standalone: true}" [(ngModel)]="message" id="message" class="form-control"></textarea>
+      </div>
+      <button (click)="sendMail()" type="button" class="btn btn-allinnight">ENVIAR</button>
+    </form>
+  </div>
+</div>

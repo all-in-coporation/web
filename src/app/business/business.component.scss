@@ -1,0 +1,35 @@
+.business {
+    position: relative;
+    width: 100%;
+    .main-parallax {
+        /* The image used */
+        background-image: url('/assets/img/business.jpg');
+        /* Set a specific height */
+        min-height: 100vh; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        position: absolute;
+        top: 14vh;
+        left: 0;
+        right: 0;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        p {
+            margin: 5vh auto;
+        }
+    }
+}
+@media (max-width:728px) {
+    .business {
+        .main-parallax {
+            min-height: 135vh;
+        }
+    }
+}

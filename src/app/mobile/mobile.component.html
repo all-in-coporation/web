@@ -1,0 +1,33 @@
+<div class="mobile">
+  <div class="main-parallax"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 pt-5 mt-5">
+        <h3>
+          PLANIFICÁ TU NOCHE CON
+        </h3>
+        <h1>
+          ALL IN NIGHT
+        </h1>
+        <p>
+          <strong>Próximamente</strong> podrás descargar nuestra App y descubrir lo mejor para tu noche
+          All Inclusive
+        </p>
+        <p>
+          <strong>
+            Suscribite para ser el primero en enterarte de las últimas novedades
+          </strong>
+        </p>
+        <form>
+          <div class="input-group">
+            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="mail" name="mail" type="email" class="email form-control" aria-label="Subscribe by email">
+          </div>
+          <button (click)="addMail()" type="button" class="btn btn-allinnight">Suscribite</button>
+        </form>
+      </div>
+      <div class="d-none d-md-block col-6  phone-container">
+        <img src="assets/img/phone.png">
+      </div>
+    </div>
+  </div>
+</div>

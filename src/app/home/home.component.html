@@ -1,0 +1,28 @@
+<div class="home">
+  <div class="main-parallax"></div>
+  <div class="container-fluid">
+    <img class="logo" src="assets/img/logo-white.png"/>
+    <a (click)="showMenu()" class="menu-container">
+      <img class="icon" src="assets/img/menu.png">
+    </a>
+    <a (click)="goTo('business')" class="more">
+      <span>El <strong>All Inclusive</strong> de la noche</span>
+      <br/>
+      <img class="icon mt-2" src="assets/img/down-arrow.png">
+    </a>
+  </div>
+  <div class="menu-popover d-none">
+    <a (click)="close()" class="close"><img src="assets/img/close.png"></a>
+    <ul>
+      <li>
+        <a (click)="goTo('business')">EMPRESA</a>
+      </li>
+      <li>
+        <a (click)="goTo('mobile')">APP</a>
+      </li>
+      <li>
+        <a (click)="goTo('contact')">CONTACTO</a>
+      </li>
+    </ul>
+  </div>
+</div>

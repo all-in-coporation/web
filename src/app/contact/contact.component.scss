@@ -1,0 +1,63 @@
+.contact {
+    position: relative;
+    width: 100%;
+    .main-parallax {
+        /* The image used */
+        background-image: url('/assets/img/contact.jpg');
+        /* Set a specific height */
+        min-height: 110vh; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        right: 0;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        width: 50vw;
+        p {
+            margin: 2rem auto;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+        .form-control {
+            border-width: 0.2rem;
+            border-color: rgb(255, 71, 214);
+            border-radius: 3rem;
+            background-color: transparent;
+            color: white;
+        }
+        textarea {
+            min-height: 25vh;
+        }
+        .btn-allinnight {
+            font-weight: bold;
+            background-color: rgb(255, 71, 214);
+            border-radius: 1rem;
+            color: white;
+            margin-top: 1rem;
+            padding: 0.1rem 2rem;
+        }
+    }
+}
+@media (max-width:728px) {
+    .contact {
+        .main-parallax {
+            min-height: 135vh;
+        }
+        .container {
+            width: 70vw;
+        }
+    }
+}

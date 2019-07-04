@@ -1,0 +1,47 @@
+.contact {
+    position: relative;
+    width: 100%;
+    .main-parallax {
+        /* The image used */
+        background-image: url('/assets/img/footer.jpg');
+        /* Set a specific height */
+        min-height: 100vh; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        position: absolute;
+        top: 14vh;
+        left: 0;
+        right: 0;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        height: 85vh;
+        a {
+            color: white;
+        }
+        .copy-right {
+            color: rgb(255, 71, 214);
+            font-size: 0.8rem;
+            // margin-top: 4rem;
+        }
+        .site-by {
+            position: absolute;
+            bottom: 5vh;
+            text-align: center;
+            font-size: 0.5rem;
+            width: 100%;
+        }
+        .logo-container {
+            padding: 3rem;
+            img {
+                width: 15rem;
+            }
+        }
+    }
+}

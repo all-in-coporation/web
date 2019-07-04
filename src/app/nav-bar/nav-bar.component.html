@@ -1,0 +1,21 @@
+<nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+  <a class="navbar-brand" (click)="goTo('home')">
+    <img class="logo-img" src="assets/img/logo-pink.png"/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-all-in" aria-controls="navbar-all-in" aria-expanded="false" aria-label="Toggle navigation">
+    <img class="icon" src="assets/img/menu.png">
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbar-all-in">
+    <ul class="navbar-nav mx-auto">
+      <li go-to="business" class="nav-item active">
+        <a class="nav-link" (click)="goTo('business')">EMPRESA</a>
+      </li>
+      <li go-to="mobile" class="nav-item">
+        <a class="nav-link" (click)="goTo('mobile')">APP</a>
+      </li>
+      <li go-to="contact" class="nav-item">
+        <a class="nav-link" (click)="goTo('contact')">CONTACTO</a>
+      </li>
+    </ul>
+  </div>
+</nav>

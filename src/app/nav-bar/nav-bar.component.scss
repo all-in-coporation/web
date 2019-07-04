@@ -1,0 +1,57 @@
+nav {
+    z-index: 1;
+    padding: auto 3rem;
+    width: 100%;
+    font-weight: bold;
+    background-color: #3C0066;
+    .navbar-brand {
+        cursor: pointer;
+        .logo-img {
+            width: 4rem;
+            margin-left: 4rem;
+        }
+    }
+    .icon {
+        width: 2rem;
+    }
+    a {
+        color: #ff47d6;
+    }
+    #navbar-all-in {
+        margin-right: 9rem;
+    }
+    .nav-item {
+        cursor: pointer;
+        &.active{
+            a {
+                color: white;
+            }
+        }
+    }
+    .nav-link {
+        padding: auto 2rem;
+        &:hover {
+            color:  white;
+        }   
+    }
+    .collapse {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
+@media (max-width:728px) {
+    nav {
+        .navbar-brand {
+            cursor: pointer;
+            .logo-img {
+                width: 3rem;
+                margin-left: 0.8rem;
+            }
+        }
+        .nav-link {
+            text-align: left;
+        }
+    }
+}
