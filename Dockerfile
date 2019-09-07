@@ -1,13 +1,12 @@
-FROM nginx:stable-alpine
+FROM node:11.15.0 AS builder
 
 WORKDIR /opt/app
 
-RUN rm -rf /usr/share/nginx/html
-RUN echo 'npm install --production' >> /usr/bin/start.sh
-RUN ln -s  /opt/app/dist /usr/share/nginx/html
+COPY . .
 
+RUN npm install && \
+    npm run build
 
-RUN echo chmod -R 755 /opt/app >> /boot.sh
-#RUN echo 'nginx -g "daemon off;"' >> /usr/bin/start.sh
+FROM nginx:alpine
 
-CMD sh /boot.sh && nginx -g "daemon off;"
+COPY --from=builder /opt/app/dist /usr/share/nginx/html
