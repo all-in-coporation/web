@@ -8,9 +8,8 @@ RUN npm install && \
     npm run build
 
 FROM nginx:alpine
-
-RUN cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.orig && \
-    sed -i 's/listen[[:space:]]*80;/listen 8080;/g' /etc/nginx/conf.d/default.conf
+COPY ./default.conf /etc/nginx/conf.d/
 EXPOSE 8080
+CMD ["nginx", "-g", "daemon off;"]
 
 COPY --from=builder /opt/app/dist /usr/share/nginx/html
