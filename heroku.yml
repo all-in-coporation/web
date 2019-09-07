@@ -1,3 +1,7 @@
+setup:
+  config: 
+    NGINX_HTTP_PORT_NUMBER: 8080
+    NGINX_HTTPS_PORT_NUMBER: 8043
 build:
   docker:
     web: Dockerfile
